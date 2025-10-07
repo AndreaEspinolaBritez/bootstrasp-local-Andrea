@@ -1,4 +1,32 @@
 ``` bash
 sudo apt install apache2
+🔧 1. Actualiza los paquetes del sistema
+
+Abre la terminal y ejecuta:
+
+sudo apt update
+sudo apt upgrade -y
+
+🌐 2. Instala Apache
+sudo apt install apache2 -y
+
+🧠 3. Verifica que el servicio esté corriendo
+sudo systemctl status apache2
+
+
+Debe mostrar algo como active (running).
+Para salir de esa vista, presiona q.
+
+🌍 4. Prueba en el navegador
+
+Abre tu navegador y entra a:
+
+http://localhost
+
+
+Debería aparecer la página por defecto de Apache (“It works!” o “Funciona”).
+
+🪄 5. (Opcional) Habilita que Apache arranque con el sistema
+sudo systemctl enable apache2
 
 ```
